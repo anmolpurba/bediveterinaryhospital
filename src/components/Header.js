@@ -1,5 +1,5 @@
 import React from 'react'
-import logo3 from '../assets/logo3.png'
+import logo5 from '../assets/logo5.jpg'
 import hamburger from '../assets/hamburger.png'
 import { useState } from 'react'
 
@@ -13,7 +13,7 @@ const Header = () => {
             <div className='flex-initial'>
                 <div className='logoDesc p-2 flex'>
                     <div className='logo flex-initial'>
-                        <img src={logo3} className='w-24' alt="website dog logo" />
+                        <img src={logo5} className='w-24' alt="website dog logo" />
                     </div>
                     <div className='mt-3'>
                         <h1 className='text-2xl font-semibold text-gray-700 tracking-wide'>BEDI<span className='text-logoColor font-extrabold'>VETERINARY</span>HOSPITAL</h1>
