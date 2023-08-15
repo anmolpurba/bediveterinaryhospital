@@ -1,6 +1,7 @@
 import React from 'react'
 import logo5 from '../assets/logo5.jpg'
 import hamburger from '../assets/hamburger.png'
+import hamburger1 from '../assets/hamburger1.svg'
 import { useState } from 'react'
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
         <div className='flex justify-between'>
             <div className='flex-initial'>
                 <div className='logoDesc p-2 flex'>
-                    <div className='logo flex-initial'>
+                    <div className='logo'>
                         <img src={logo5} className='w-24' alt="website dog logo" />
                     </div>
                     <div className='mt-3'>
@@ -30,7 +31,7 @@ const Header = () => {
             </div>
 
             <div className='p-6 flex-none visible lg:hidden'>
-                <img className='cursor-pointer h-[40px] w-[40px]' onClick={() => {SetisMenuOpen(!isMenuOpen)}} src={hamburger} alt="" />
+                <img className='cursor-pointer h-[40px] w-[40px] ' onClick={() => {SetisMenuOpen(!isMenuOpen)}} src={hamburger1} alt="" />
 
             </div>
 

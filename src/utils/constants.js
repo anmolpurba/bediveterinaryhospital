@@ -33,5 +33,10 @@ export const services = [
     "name": "Pet Grooming",
     "image_url": "https://image3.jdomni.in/library/87/F6/B9/6AAF1EAEF925B4FBAF87C15FF4_1496254695451_cropped_450X450.jpeg",
     "description": "We are fully committed to provide your pet with excellent health care by our experienced veterinary surgeons."
+  },
+  {
+    "name": "Deworming",
+    "image_url": "https://image3.jdomni.in/library/DB/92/9D/E21EB4CD0CE7F3339127D63630_1496936826667_cropped_450X450.jpeg",
+    "description": "Ensure your furry friend's well-being with a thorough pet deworming session at our clinic."
   }
 ]

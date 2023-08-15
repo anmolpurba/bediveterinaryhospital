@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Info from './components/Info';
 import heroDog5 from "./assets/catHero.webp"
 import OurServices from './components/OurServices';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
       </div>
       <OurServices />
+      <Footer />
     </div>
   );
 }

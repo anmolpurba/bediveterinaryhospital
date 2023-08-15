@@ -6,7 +6,7 @@ import { services } from '../utils/constants'
 const OurServices = () => {
   return (
     <div className=''>
-        <h1 className='text-2xl font-bold text-center mt-4 mb-4'>Services</h1>
+        <h1 className='text-3xl font-bold font-mono text-center mt-14 mb-10'>Services</h1>
 
         <div className='grid grid-cols-fill-40 gap-7 items-center justify-center'>
             {services.map((service) => {return <ServiceCard url={service.image_url} title={service.name} desc={service.description} />})}
