@@ -10,6 +10,9 @@ module.exports = {
           cyan: colors.cyan,
       }
     },
+    gridTemplateColumns: {
+      'fill-40': 'repeat(auto-fill, minmax(5em, 20em))',
+    },
     // screens:{
     //   'mobile':{'max' : '480px'}
     // },

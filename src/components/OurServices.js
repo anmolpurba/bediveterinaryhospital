@@ -1,13 +1,18 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
+import petgroom from "../assets/petgroom.jpg"
+import { services } from '../utils/constants'
 
 const OurServices = () => {
   return (
-    <div>
-        <h1 className='text-2xl font-bold text-center mt-4'>Services</h1>
+    <div className=''>
+        <h1 className='text-2xl font-bold text-center mt-4 mb-4'>Services</h1>
 
-        <div className=''>
+        <div className='grid grid-cols-fill-40 gap-7 items-center justify-center'>
+            {services.map((service) => {return <ServiceCard url={service.image_url} title={service.name} desc={service.description} />})}
+            {/* <ServiceCard url={petgroom} title={"Pet Grooming Services"} desc={"Enhance the look of your pet by giving them a grand hair cut, spa shower and many other beauty touch up."} />
             <ServiceCard />
+             */}
         </div>
     </div>
   )

@@ -1,14 +1,16 @@
 import React from 'react'
 import petgroom from "../assets/petgroom.jpg"
 
-const ServiceCard = () => {
+const ServiceCard = (props) => {
   return (
-    <div className='w-1/6'>
+    <div className='cursor-pointer'>
         <div className='w-full'>
-            <img className='rounded-lg' src={petgroom} alt="" />
+            <img className='rounded-2xl' src={props.url} alt="" />
         </div>
-        <h1 className=''>Pet Grooming Services</h1>
-        <h3>Enhance the look of your pet by giving them a grand hair cut, spa shower and many other beauty touch up.</h3>
+        <div className='mt-3'>
+            <h1 className='text-center text-xl font-semibold font-serif'>{props.title}</h1>
+            <h3 className='text-gray-700 text-center '>{props.desc}</h3>
+        </div>
     </div>
   )
 }
