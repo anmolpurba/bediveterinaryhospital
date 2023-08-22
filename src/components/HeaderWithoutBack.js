@@ -1,5 +1,6 @@
 import React from 'react'
 import logo5 from '../assets/logo5.jpg'
+import logo3 from "../assets/logo3.png"
 import hamburger from '../assets/hamburger.png'
 import hamburger1 from '../assets/hamburger1.svg'
 import { useState } from 'react'
@@ -8,19 +9,18 @@ import heroDog5 from "../assets/catHero.webp"
 import OurServices from './OurServices'
 import Footer from './Footer'
 import { Outlet } from 'react-router-dom'
-import { serviceInfo } from '../utils/constants'
 
-const Header = () => {
+const HeaderWithoutBack = () => {
 
     const [isMenuOpen, SetisMenuOpen] = useState(false);
 
   return (
-    <div className='w-full h-[700px] bg-center bg-cover p-10' style={{backgroundImage: `url(${heroDog5})`}}>
+    <div>
         <div className='flex justify-between'>
             <div className='flex-initial'>
                 <div className='logoDesc p-2 flex'>
                     <div className='logo'>
-                        <img src={logo5} className='w-24' alt="website dog logo" />
+                        <img src={logo3} className='w-24' alt="website dog logo" />
                     </div>
                     <div className='mt-3'>
                         <h1 className='text-2xl font-semibold text-gray-700 tracking-wide'>BEDI<span className='text-logoColor font-extrabold'>VETERINARY</span>HOSPITAL</h1>
@@ -54,13 +54,9 @@ const Header = () => {
                 </div>:null}
         </div>
 
-        {/* <Outlet /> */}
-        <Hero />
-        <OurServices />
-        <Footer />
-
+        <Outlet />
     </div>
   )
 }
 
-export default Header
+export default HeaderWithoutBack
