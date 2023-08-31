@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ServiceInfo from './components/ServiceInfo';
 import Combine from './components/Combine';
 import HeaderWithoutBack from './components/HeaderWithoutBack';
+import About from './components/About';
 
 
 const appRouter = createBrowserRouter([{
@@ -25,6 +26,16 @@ const appRouter = createBrowserRouter([{
       element:<ServiceInfo />
     }
   ]
+},
+{
+  path:"/about",
+  element:<About />,
+  children:[
+    {
+      path:"/about",
+      element:<HeaderWithoutBack />
+    }
+  ]
 }
 ])
 
@@ -32,15 +43,6 @@ function App() {
   return (
     <div>
       <RouterProvider router={appRouter} />
-
-
-
-      {/* <div className='w-full h-[700px] bg-center bg-cover p-10' style={{backgroundImage: `url(${heroDog5})`}}>
-        <Header />
-        <RouterProvider router={appRouter} />
-      </div> */}
-      {/* <OurServices />
-      <Footer /> */}
     </div>
   );
 }

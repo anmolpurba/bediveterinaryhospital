@@ -8,7 +8,7 @@ import Hero from './Hero'
 import heroDog5 from "../assets/catHero.webp"
 import OurServices from './OurServices'
 import Footer from './Footer'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const HeaderWithoutBack = () => {
 
@@ -30,10 +30,8 @@ const HeaderWithoutBack = () => {
             </div>
             <div className="navItems font-semibold text-xl text-logoColor p-6 hidden lg:block">
                 <ul className='flex justify-end gap-5 cursor-pointer'>
-                    <li className='duration-300 ease-in-out hover:text-gray-700'>Home</li>
-                    <li className='duration-300 ease-in-out hover:text-gray-700'>About Us</li>
-                    <li className='duration-300 ease-in-out hover:text-gray-700'>Our Services</li>
-                    <li className='duration-300 ease-in-out hover:text-gray-700'>Contact Us</li>
+                    <Link to="/"> <li className='duration-300 ease-in-out hover:text-gray-700'>Home</li> </Link>
+                    <Link to="/about"> <li className='duration-300 ease-in-out hover:text-gray-700'>About Us</li> </Link>
                 </ul>
             </div>
 
